@@ -5,30 +5,489 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>We.care</title>
+  <link rel="shortcut icon" href="./assets/header/WeCare.ico">
   <link rel="stylesheet" href="./styles/home/home.css">
+  
 </head>
 <body>
-  <header id="header">
-    <div class="container">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <img src="" alt="">          
-        </div>
-        <div class="navbar__nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="">Find a Doctor</a></li>
-            <li class="nav__item"><a href="">Find a Hospital</a></li>
-            <li class="nav__item"><a href="">Health A to Z</a></li>          
-          </ul>
-        </div>
-      </nav>
+  <header id="header" class="header__container">
+    <div class="header__wrapper">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="./index.html"><img src="./assets/header/WeCare-Logo.png" alt="WeCare-Logo"> </a>
+          </div>
+          <div class="navbar__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="" class="nav__link">Find a Doctor</a></li>
+              <li class="nav__item"><a href="" class="nav__link">Find a Hospital</a></li>
+              <li class="nav__item"><a href="" class="nav__link">Health A to Z</a></li>
+            </ul>
+          </div>
+          <div class="navbar__user">
+            <div class="user__item navbar__user--login">
+              <a href="#">Log in</a>
+            </div>
+            <div class="user__item navbar__user--sign-in">
+              <button class="btn btn__primary">Sign in</button>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
+    
+    <!-- ====================  HERO SECTION ==================== -->
+
+    <section id="hero" class=" hero__wrapper" >
+      <div class=" hero__container">
+        <div class="hero__item--left">
+          <h1>Feel better about <br>
+            finding healthcare
+          </h1>
+          <p>At Healthgrades, we take the guesswork out of finding the right doctors, hospitals, and care for you and   your family</p>
+          <div class="hero__buttons">
+            <button class=" btn btn__secondary hero__button">
+              <i class="fa-solid fa-users"></i>
+              <span>Profiles for Evry <br> Doctor in Amerika</span>
+            </button>
+            <button class=" btn btn__secondary hero__button">
+              <i class="fa-solid fa-ranking-star"></i>
+              <span>More Than 10 Million <br> Patient Rating</span>
+            </button>
+          </div>
+        </div>
+        <div class="Hero__item--right">
+          <img src="./assets/hero/0-removebg-preview.png" alt="">
+        </div>
+        <div class="search-card__wrapper">
+          <form action="" id="search-form" class="search__card">
+            <div class="search__options">
+              <i class="fa-solid fa-magnifying-glass input__icon"></i>
+              <input name="search-option" type="search" placeholder="Search Doctor, onditions or Prodecures" class="search__input input__search-icon" >
+            </div>
+            <div class="search__location">
+              <i class="fa-solid fa-location-dot input__icon"></i>
+              <input type="search" placeholder="Set your location " class="search__input input__location-icon" >
+            </div>
+            <div class="search__button">
+              <button class="btn btn__primary search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="search__text">
+              <h3>You may be looking for</h3>
+            </div>
+            <div class="search__filters">
+              <div class="search__filter">
+                <span class="search__filter--text" >Family Medicine</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="search__filter">
+                <span class="search__filter--text" >Pediatrics</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="search__filter">
+                <span class="search__filter--text" >Top Hospital</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="search__filter">
+                <span class="search__filter--text" >Tele Health</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="search__filter">
+                <span class="search__filter--text" >Covid-19</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="search__filter">
+                <span class="search__filter--text" >orthopedic Surgery</span>
+                <span class="search__filter--icon"><i class="fa-solid fa-xmark"></i></span>
+              </div>
+              <div class="filter__more">
+                <button class="btn btn__more" >more</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== POPULAR SEARCH ==================== -->
+    <section id="popular-search">
+      <div class="container popular-search__wrapper">
+        <div class="popular-search__heading">
+          <h2>Polpular Searches on Wecare</h2>
+        </div>
+        <div class="popular-search__items">
+          <div class="search__item--left">
+            <div class="search__list-item"><span>Specialities</span></div>
+            <div class="search__list-item"><span>Conditions</span></div>
+            <div class="search__list-item"><span>Procidures</span></div>
+            <!-- <ul class="search__lists">
+              <li class="search__list-item">Specialities</li>
+              <li class="search__list-item">Conditions</li>
+              <li class="search__list-item">Procidures</li>
+            </ul> -->
+          </div>
+          <div class="search__item--right">
+            <div class="search__item">
+              <img src="./assets/popular-search/Dermatology.png" alt="Dermatology" class="item__icon">
+              <span>Dermatology</span>
+            </div>
+            <div class="search__item">
+              <img src="./assets/popular-search/InternalMedicine.png" alt="Intenal Medicine" class="item__icon">
+              <span>Internal Medicine</span>
+            </div>
+            <div class="search__item">
+              <img src="./assets/popular-search/Neurology.png" alt="Neurology" class="item__icon">
+              <span>Neurology</span>
+            </div>
+            <div class="search__item">
+              <img src="./assets/popular-search/GeneralMedicine.png" alt="General Medicine" class="item__icon">
+              <span>General Medicine</span>
+            </div>
+            <div class="search__item">
+              <img src="./assets/popular-search/Dentistry.png" alt="Dentistry" class="item__icon">
+              <span>Dentistry</span>
+            </div>
+            <div class="search__item">
+              <img src="./assets/popular-search/Otolaryngology.png" alt="Otolaryngology" class="item__icon">
+              <span>Otolaryngology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== Appoinment Section ==================== -->
+    <section id="appointment">
+      <div class="container appintment__wrapper">
+        <div class="appointment__left">
+          <h2>Finding the right doctor <br> right at your fingerips</h2>
+          <p>We.care give you tools and information you need to</p>
+          <div class="search__procedure">
+            <div class="search__procedure--item">
+              <div class="procedure__icon icon__search"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <h3>Search nearest Hospital</h3>
+              <div class="procedure__line"></div>
+              <p>Find doctors and hospitals base on the factors that matters most to you.</p>
+            </div>
+            <div class="search__procedure--item">
+              <div class="procedure__icon icon__calendar"><i class="fa-solid fa-calendar-check"></i></div>
+              <h3>Appointments with the best doctor</h3>
+              <div class="procedure__line"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio porro atque consequuntur dicta. </p>
+            </div>
+            <div class="search__procedure--item">
+              <div class="procedure__icon icon__phone"><i class="fa-solid fa-phone"></i></div>
+              <h3>Get notified</h3>
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio porro atque consequuntur dicta. </p>
+            </div>
+          </div>
+        </div>
+        <div class="appintment__serach--box">
+          <form action="" id="search-form" class="Appointment__search--card">
+            <h3>Find the best doctor you need</h3>
+            <div class="search__options">
+              <i class="fa-solid fa-magnifying-glass input__icon"></i>
+              <input name="search-option" type="search" placeholder="Search Doctor" class="search__input input__search-icon" >
+            </div>
+            <div class="search__location">
+              <i class="fa-solid fa-location-dot input__icon"></i>
+              <input type="search" placeholder="Set your location " class="search__input input__location-icon" >
+            </div>
+            <div class="search__btn">
+              <button class="btn btn__primary search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>         
+        <div class="appointment__right">
+          <!-- <img src="./assets/wecare-images/appointment.png" alt="Making Appoinment"> -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== Features ==================== -->
+    <section id="features">
+      <div class=".container features__wrapper">
+        <div class="features__left">
+          
+        </div>
+        <div class="doctors__list">
+          <div class="doctor__item">
+            <div class="doctor__name">
+              <img src="./assets/doctors_avater/1-removebg-preview.png" alt="" class="doctor__avatar">
+              <span>Dr. Henry ipsum</span>
+            </div>
+            <div class="ellipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+          <div class="doctor__item">
+            <div class="doctor__name">
+              <img src="./assets/doctors_avater/5-removebg-preview.png" alt="" class="doctor__avatar" >
+              <span>Dr. Lorem</span>
+            </div>
+            <div class="ellipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+          <div class="doctor__item">
+            <div class="doctor__name">
+              <img src="./assets/doctors_avater/6-removebg-preview.png" alt="" class="doctor__avatar">
+              <span>Dr. Lorem ipsum</span>
+            </div>
+            <div class="ellipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+          <div class="doctor__item">
+            <div class="doctor__name">
+              <img src="./assets/doctors_avater/7-removebg-preview.png" alt="" class="doctor__avatar">
+              <span>Dr. Lorem ipsum</span>
+            </div>
+            <div class="ellipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+          <div class="doctor__item">
+            <div class="doctor__name">
+              <img src="./assets/doctors_avater/8-removebg-preview.png" alt="" class="doctor__avatar" >
+              <span>Dr. Lorem ipsum</span>
+            </div>
+            <div class="ellipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+        </div>
+        <div class="features__right">
+          <h2>Why you choose We.care </h2>
+          <p>We.care gives you Tools and information you need to</p>
+          <div class="features__items">
+            <div class="feature__item">
+              <i class="fa-solid fa-circle-check feature__icon"></i>
+              <h5>Lorem, ipsum dolor sit amet consectetur adipisici </h5>
+            </div>
+            <div class="feature__item">
+              <i class="fa-solid fa-circle-check feature__icon"></i>
+              <h5>Lorem, ipsum dolor sit amet consectetur adipisici </h5>
+            </div>
+            <div class="feature__item">
+              <i class="fa-solid fa-circle-check feature__icon"></i>
+              <h5>Lorem, ipsum dolor sit amet consectetur adipisici </h5>
+            </div>
+            <div class="feature__item">
+              <i class="fa-solid fa-circle-check feature__icon"></i>
+              <h5>Lorem, ipsum dolor sit amet consectetur adipisici </h5>
+            </div>
+            <div class="feature__item">
+              <i class="fa-solid fa-circle-check feature__icon"></i>
+              <h5>Lorem, ipsum dolor sit amet consectetur adipisicied </h5>
+            </div>
+            
+          </div>
+          <button class="btn btn__primary feature__btn">Get free Lorem</button>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== Specialist ==================== -->
+
+    <section id="specialiast">
+      <div class="container specialist__wrapper">
+        <div class="specilalist__heading">
+          <h2>Meet our specialists</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="specialist__list">
+          <div class="specialist__item">
+            <div class="specialist--img">
+              <!-- <img src="./assets/specialist/1-removebg-preview.png" alt="Dr. Alexander"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. Alexander</h4></div>
+            <p class="specialist--Specialty">Dental Surgery</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/5-removebg-preview.png" alt="Dr. Kathryn Morphy"> -->
+            </div>
+            <div class="item--name"><h4>Dr. Kathryn Morphy</h4></div>
+            <p class="item--Specialty">Peditrie Medicine</p>
+          </div>
+          <div class="specialist__item">  
+            <div class="specialist--img">
+              <!-- <img src="./assets/specialist/6-removebg-preview.png" alt="Dr. Ariene McCoy"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. Ariene McCoy</h4></div>
+            <p class="specialist--Specialty"> Cardiologist</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/9-removebg-preview.png" alt="Dr. Robert Fox"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. Robert Fox</h4></div>
+            <p class="specialist--Specialty">Gastroenterology</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/8-removebg-preview.png" alt="Dr. Esther Howard"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. Esther Howard</h4></div>
+            <p class="specialist--Specialty">Thoracic Surgery</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/7-removebg-preview.png" alt="Dr. Albert Flores"> -->
+            </div>
+            <div class="ispecialist--name"><h4>Dr. Albert Flores</h4></div>
+            <p class="specialist--Specialty"> Intern Neurologist</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/3-removebg-preview.png" alt="Dr. Jerome Bell"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. Jerome Bell</h4></div>
+            <p class="specialist--Specialty">Obstetrics and Gynecologist</p>
+          </div>
+          <div class="specialist__item">
+            <div class="specialist--img">
+            <!-- <img src="./assets/specialist/appointment.png" alt="Dr. John Wilson"> -->
+            </div>
+            <div class="specialist--name"><h4>Dr. John Wilson</h4></div>
+            <p class="specialist--Specialty">Internal Medicine</p>
+          </div>
+        </div>
+        <div class="specialist__slide-period">
+          <i class="fa-solid fa-circle blue_circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Feedback ==================== -->
+
+    <section id="feedback">
+      <div class="container feedback_wrapper">
+        <div class="feedback__heading">
+          <h2>Our patient feedback about us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sint cum nam recusandae quo tenetur, tempore iure.</p>
+        </div>
+        <div class="feedback__content">
+          <div class="feedback__content--left">
+            <img src="./assets/wecare-images/header-slide-img3.png" alt="Patient Feedback">
+          </div>
+          <div class="feedbak_content--right">
+            <div class="patient__profile">
+              <div class="patient__profile--img">
+                <img src="./assets/wecare-images/feedback-avatar.png" alt="">
+              </div>
+              <div class="patient__profile--info">
+                <h5>Brooklyn Jacoob</h5>
+                <p>Lorem ipsum do</p>
+                <div class="feedback__stars">
+                  <i class="fa-solid fa-star feedback__star"></i>
+                  <i class="fa-solid fa-star feedback__star"></i>
+                  <i class="fa-solid fa-star feedback__star"></i>
+                  <i class="fa-solid fa-star feedback__star"></i>
+                  <i class="fa-solid fa-star feedback__star"></i>
+                </div>
+              </div>
+            </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam incidunt rerum mollitia maxime   delectus laborum ipsa accusantium minima nihil, odio, doloribus.
+              </p>
+              <div class="feedback__slide-period">
+                <i class="fa-solid fa-circle blue_circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Subscribtion ==================== -->
+    <section id="subscribtion">
+      <div class="container subscribtion__wrapper">
+        <h2>Subscrib for any news <br>
+          Update from Wecare
+        </h2>
+        <div class="subcribe__input-card">
+          <input type="email" placeholder="Enter your Email Address" class="subscribe__input">
+          <button class="btn btn__secondary subscribe__btn">subscribe</button>
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer id="footer">
-
+    <div class="container footer__wrapper">
+      <div class="footer__item footer__wecare--logo">
+        <img src="./assets/header/WeCare-Logo.png" alt="">
+        <div class="footer__social-media">
+          <a class="social-media__icon" href="#">
+            <i class="fa-brands fa-facebook-square"></i>
+          </a>
+          <a class="social-media__icon" href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a class="social-media__icon" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="social-media__icon" href="#">
+            <i class="fa-brands fa-skype"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__item">
+        <h5>For Patient</h5>
+          <ul>
+            <li class="footer_link">Lorem, ipsum dolor sit amet </li>
+            <li class="footer_link">consectetur adipisicing elit. </li>
+            <li class="footer_link">Voluptate voluptatem </li>
+            <li class="footer_link">libero ex </li>
+            <li class="footer_link">exercitationem incidunt </li>
+            <li class="footer_link">nulla cupiditate</li>
+            <li class="footer_link"> esse nostrum </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5>For Providers</h5>
+          <ul>
+            <li class="footer_link">nesciunt dicta </li>
+            <li class="footer_link">sed laborum consequuntur </li>
+            <li class="footer_link">repellendus tenetur, </li>
+            <li class="footer_link">corporis eum autem </li>
+            <li class="footer_link">praesentium fuga!</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5>For Partners</h5>
+          <ul>
+            <li class="footer_link">Lorem ipsum</li>
+            <li class="footer_link"> dolor sit amet consectetur, </li>
+            <li class="footer_link">adipisicing elit. Tenetur, </li>
+            <li class="footer_link">dolorem sed architecto </li>
+            <li class="footer_link">vitae quia ipsum</li>
+            <li class="footer_link"> voluptates cupiditate </li>
+            <li class="footer_link">tempore eos </li>
+            <li class="footer_link">incidunt </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h5>Our Company</h5>
+          <ul>
+            <li class="footer_link">nulla debitis</li>
+            <li class="footer_link"> atque ipsa, </li>
+            <li class="footer_link">rem doloribus </li>
+            <li class="footer_link">tempora, </li>
+            <li class="footer_link">aperiam </li>
+            <li class="footer_link">id? </li>
+            <li class="footer_link">Sequi?</li>
+          </ul>
+        </ul>
+      </div>
+      
+    </div>
   </footer>
+  <script src="./javascript/jquery-3.6.0.js"></script>
+  <script src="./javascript/menu.js"></script>
+
 </body>
 </html>

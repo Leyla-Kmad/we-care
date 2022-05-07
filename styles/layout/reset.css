@@ -4,8 +4,8 @@
   --primary-color: #e8f1ff;
   --dark-color: #102851;
   --accent-color: #014ed5;
-  --light-color: #9fa0b9;
-  --secondary-color: #f9fbfe;
+  --light-color: rgb(159, 160, 185);
+  --secondary-color: rgb(249, 251, 254);
 }
 
 *,
@@ -30,7 +30,7 @@ body {
 
 button,
 span,
-input[type="text"]::placeholder {
+input[type="search"]::placeholder {
     font-family: inherit;
 }
 
@@ -50,6 +50,20 @@ a {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.3rem;
+}
+
+p{
+  color: var(--light-color);
+}
+
